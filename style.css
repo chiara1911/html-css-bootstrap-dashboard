@@ -36,7 +36,7 @@ main {
     background-color: var(--color-side-bar);
     color: white;
     width: 150px;
-    background-image: url("../html-css-bootstrap-dashboard/img/sidebar-bg.png");
+    background-image: url("../img/sidebar-bg.png");
 }
 
 #top-bar i{
@@ -54,3 +54,10 @@ main {
     font-size:10px;
 }
 
+table img{
+    width: 5%;
+}
+
+table{
+    font-size: 12px;
+}

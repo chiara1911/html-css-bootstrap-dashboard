@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Bootstrap Dashboard</title>
 </head>
@@ -28,8 +29,8 @@
                 <div id="top-bar">
                     <ul class="list-inline">
                         <li><i class="fa-solid fa-house p-2"></i>Home</li>
-                        <li><i class="fa-solid fa-chart-simple p-2"></i></i>Stats</li>
-                        <li><i class="fa-solid fa-signal p-2"></i></i>Signals</li>
+                        <li><i class="fa-solid fa-chart-simple p-2"></i>Stats</li>
+                        <li><i class="fa-solid fa-signal p-2"></i>Signals</li>
                     </ul>
 
                 </div>
@@ -42,51 +43,161 @@
                 <div class="container-fluid p-4">
 
                     <div id="dashboard" class="row">
-                        <div class="col-12 col-lg-8">
+                        <div class="col-12 col-lg-8 py-4">
                             <div class="card">
                                 <div class="card-header">
                                     Prossime classi
                                 </div>
                                 <table class="table">
                                     <thead>
-                                        <tr>
-                                            <th colspan="6">Nome</th>
-                                            <th colspan="2">Data inizio</th>
-                                            <th colspan="1">Last</th>
-                                            <th colspan="1">Handle</th>
-                                            <th colspan="2">pippo</th>
+                                        <tr >
+                                            <th class="col-7">Nome</th>
+                                            <th class="col-1">Data inizio</th>
+                                            <th class="col-1">Last</th>
+                                            <th class="col-1">Handle</th>
+                                            <th class="col-1">Azioni</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td colspan="6">Mark</td>
-                                            <td colspan="2">Otto</td>
-                                            <td colspan="1">@mdo</td>
-                                            <td colspan="1">@mdo</td>
-                                            <td colspan="2">@mdo</td>
+                                        <tr class="border-bottom border-black">
+                                            <td><img src="img/class-avatar.jpg" alt="" class="px-1">Classe 75</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td><button><i class="fa-solid fa-pencil"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>
                                         </tr>
-                                        <tr>
-                                            <td colspan="6">Mark</td>
-                                            <td colspan="2">Otto</td>
-                                            <td colspan="1">@mdo</td>
-                                            <td colspan="1">@mdo</td>
-                                            <td colspan="2">@mdo</td>
+                                        <tr class="border-bottom border-black">
+                                            <td><img src="img/class-avatar.jpg" alt="" class="px-1">Classe 76</td>
+                                            <td>16 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td><button><i class="fa-solid fa-pencil"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>
                                         </tr>
-                                        <tr>
-                                            <td colspan="6">Mark</td>
-                                            <td colspan="2">Otto</td>
-                                            <td colspan="1">@mdo</td>
-                                            <td colspan="1">@mdo</td>
-                                            <td colspan="2">@mdo</td>
+                                        <tr class="border-bottom border-black">
+                                            <td><img src="img/class-avatar.jpg" alt="" class="px-1">Classe 77</td>
+                                            <td>17 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-warning text-dark">Warning</span></td>
+                                            <td><button><i class="fa-solid fa-pencil"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>
                                         </tr>
+                                        <tr class="border-bottom border-black">
+                                            <td><img src="img/class-avatar.jpg" alt="" class="px-1">Classe 78</td>
+                                            <td>18 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td><button><i class="fa-solid fa-pencil"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>
+                                        </tr>
+                                        <tr class="border-bottom border-black">
+                                            <td><img src="img/class-avatar.jpg" alt="" class="px-1">Classe 79</td>
+                                            <td>19 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-danger">Danger</span></td>
+                                            <td><button><i class="fa-solid fa-pencil"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>
+                                        </tr>
+                                        <tr class="border-bottom border-black">
+                                            <td><img src="img/class-avatar.jpg" alt="" class="px-1">Classe 80</td>
+                                            <td>20 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td><button><i class="fa-solid fa-pencil"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>
+                                        </tr>
+                                        <tr class="border-bottom border-black">
+                                            <td><img src="img/class-avatar.jpg" alt="" class="px-1">Classe 81</td>
+                                            <td>21 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-danger">Danger</span></td>
+                                            <td><button><i class="fa-solid fa-pencil"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>
+                                        </tr>
+                                        <tr class="border-bottom border-black">
+                                            <td><img src="img/class-avatar.jpg" alt="" class="px-1">Classe 82</td>
+                                            <td>22 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td><button><i class="fa-solid fa-pencil"></i></button><button><i class="fa-solid fa-trash-can"></i></button></td>
+                                        </tr>
+                                        
 
 
                                     </tbody>
                                 </table>
 
                             </div>
+
                         </div>
-                        <div class="col-12 col-lg-4">destra</div>
+                        <div class="col-12 col-lg-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    FAQ
+                                </div>
+                                <div class="accordion accordion-flush" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                               Come aggiungere un nuovo studente
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Clicca sul + in alto nella sezione blu.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                               Come posso accedere alle informazioni del mio account
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Clicca sull'icona della campanella
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Posso usare questa dashboard da mobile?
+                                            </button>
+
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-4">
+                           
+                                <div class="card-header">
+                                    Todo
+                                </div>
+                                
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
