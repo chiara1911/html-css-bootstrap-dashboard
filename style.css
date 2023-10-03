@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+   
 }
 
 .wrapper {
@@ -47,5 +48,9 @@ main {
 #main-content {
     width: calc(100% - 150px);
     overflow-y: auto;
+}
+
+#dashboard li{
+    font-size:10px;
 }
 
