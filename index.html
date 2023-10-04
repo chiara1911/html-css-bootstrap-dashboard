@@ -44,7 +44,7 @@
             </div>
         </header>
         <main class="">
-            <section class="my-side-bar p-2 ">
+            <section class="my-side-bar p-2 d-flex justify-content-between">
                 <div id="top-bar ">
                     <ul class="list-inline">
                         <li><i class="fa-solid fa-house p-2"></i>Home</li>
@@ -55,7 +55,7 @@
                 </div>
                 <div id="bottom-bar">
                     <i class="fa-solid fa-gear"></i>
-
+                    <span class="text-light">Admin</span>
                 </div>
             </section>
             <section id="main-content">
@@ -80,7 +80,76 @@
                             </div>
                             <div class="col col-lg-3 ">
                                 <span class="text-light">Nuovo studente</span>
-                                <span class="plus text-light">+</span>
+
+                                <button class="btn btn-primary border-light m-2" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                                <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 id="offcanvasRightLabel">
+                                            <form>
+                                                <h5>Inserisci un nuovo studente</h5>
+                                                <div class="mt-3">
+
+                                                    <label for="nome" class="form-label">Nome</label>
+                                                    <input type="text" class="form-control" id="nome">
+                                                </div>
+                                                <div class="mt-3">
+
+                                                    <label for="cognome" class="form-label">Cognome</label>
+                                                    <input type="text" class="form-control" id="cognome">
+                                                </div>
+                                                <div class="mt-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                  
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="mt-3">
+
+                                                    <label for="address" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control" id="address"
+                                                        >
+                                                    
+                                                </div>
+                                                <div class="mt-3">
+                                                    <label for="city" class="form-label">Città</label>
+                                                    <input type="text" class="form-control" id="city"
+                                                        >
+                                                </div>
+                                                <div class="mt-3">
+                                                    <label for="city" class="form-label">stato</label>
+                                                    <input type="text" class="form-control" id="city"
+                                                        >                
+                                                </div>
+                                                <div class="mt-3">
+                                                    <label for="cap" class="form-label">Cap</label>
+                                                    <input type="number" class="form-control" id="cap"
+                                                        >                  
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Check me
+                                                        out</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </h5>
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        ...
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -113,7 +182,7 @@
                                                 <td>20%</td>
                                                 <td><span class="badge bg-success">Done</span></td>
                                                 <td><i class="fa-solid fa-pencil"></i>
-                                                  <i class="fa-solid fa-trash-can"></i>
+                                                    <i class="fa-solid fa-trash-can"></i>
                                                 </td>
                                             </tr>
                                             <tr class="border-bottom border-black align-middle">

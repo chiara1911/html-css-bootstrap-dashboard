@@ -6,6 +6,8 @@
     --color-bg-body: #f8f9fa;
     --color-side-bar: #0f263d;
     --color-nav-bar: #1b72e8;
+    --color-bg-pills: #165bba;
+</td>
 }
 
 body {
@@ -66,7 +68,7 @@ main {
 /* navbar-blu */
 
 .rounded-pill{
-    background-color: rgb(37, 50, 133);
+    background-color: var(--color-bg-pills);
 }
 
 .plus{
@@ -105,3 +107,4 @@ td i{
     padding: 7px;
 
 }
+
