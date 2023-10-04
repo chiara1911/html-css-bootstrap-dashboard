@@ -7,7 +7,7 @@
     --color-side-bar: #0f263d;
     --color-nav-bar: #1b72e8;
     --color-bg-pills: #165bba;
-</td>
+
 }
 
 body {
@@ -41,9 +41,7 @@ main {
     border-radius: 5px;
 }
 
-#searchbar i{
-    height: 10px;
-}
+
 #logo-boolean{
     width: 50px;
 }
@@ -108,3 +106,57 @@ td i{
 
 }
 
+/* media query */
+
+@media screen and (max-width:992px) {
+    
+   .col-auto span{
+    display: none;
+   }
+
+   .col-auto li{
+    display: none;
+   }
+
+   .col-auto li:last-child{
+    display: block;
+   }
+
+   #top-bar i{
+    display: none;
+
+   }
+   #main-content{
+    width: calc(100% - 80px);
+   }
+
+   .my-side-bar{
+    width: 80px;
+   }
+
+  .list-inline span{
+    display: none;
+  }
+
+  .list-inline i{
+    font-size: 30px;
+    text-align: center;
+  }
+  #bottom-bar span{
+    display: none;
+  }
+
+  #bottom-bar i{
+    font-size: 30px;
+    text-align: center;
+  }
+  .data{
+    display: none;
+  }
+  .roi{
+    display: none;
+  }
+
+  
+  
+}
