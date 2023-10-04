@@ -81,8 +81,9 @@
                             <div class="col col-lg-3 ">
                                 <span class="text-light">Nuovo studente</span>
 
-                                <button class="btn btn-primary border-light m-2" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                                <button class="btn btn-primary border-light m-2" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight">+</button>
 
                                 <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
                                     aria-labelledby="offcanvasRightLabel">
@@ -90,64 +91,77 @@
                                         <h5 id="offcanvasRightLabel">
                                             <form>
                                                 <h5>Inserisci un nuovo studente</h5>
-                                                <div class="mt-3">
+                                                <div class="row">
+                                                    <div class=" col-6 mt-3">
 
-                                                    <label for="nome" class="form-label">Nome</label>
-                                                    <input type="text" class="form-control" id="nome">
-                                                </div>
-                                                <div class="mt-3">
+                                                        <label for="nome" class="form-label">Nome</label>
+                                                        <input type="text" class="form-control" id="nome">
+                                                    </div>
+                                                    <div class="col-6 mt-3">
 
-                                                    <label for="cognome" class="form-label">Cognome</label>
-                                                    <input type="text" class="form-control" id="cognome">
-                                                </div>
-                                                <div class="mt-3">
-                                                    <label for="exampleInputEmail1" class="form-label">Email
-                                                        address</label>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp">
-                                                  
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="exampleInputPassword1"
-                                                        class="form-label">Password</label>
-                                                    <input type="password" class="form-control"
-                                                        id="exampleInputPassword1">
-                                                </div>
-                                                <div class="mt-3">
+                                                        <label for="cognome" class="form-label">Cognome</label>
+                                                        <input type="text" class="form-control" id="cognome">
+                                                    </div>
+                                                    <div class="col-6 mt-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Email
+                                                            address</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Username" aria-label="Username"
+                                                                aria-describedby="basic-addon1">
+                                                        </div>
 
-                                                    <label for="address" class="form-label">Indirizzo</label>
-                                                    <input type="text" class="form-control" id="address"
-                                                        >
-                                                    
+                                                    </div>
+                                                    <div class="col-6 mt-3">
+                                                        <label for="exampleInputPassword1"
+                                                            class="form-label">Password</label>
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1">
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <label for="address" class="form-label">Indirizzo</label>
+                                                        <input type="text" class="form-control" id="address">
+                                                    </div>
+                                                    <div class="col-6 mt-3">
+                                                        <label for="city" class="form-label">Città</label>
+                                                        <input type="text" class="form-control" id="city">
+                                                    </div>
+                                                    <div class="col-4 mt-3">
+                                                        <label for="stato" class="form-label">Stato</label>
+                                                        <select class="form-select" >
+                                                            <option selected>Scegli...</option>
+                                                            <option value="1">Italia</option>
+                                                            <option value="2">Francia</option>
+                                                            <option value="3">Germania</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class=" col-2 mt-3">
+                                                        <label for="cap" class="form-label">Cap</label>
+                                                        <input type="number" class="form-control" id="cap">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Foto</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                    <div class="form-check m-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label fs-6 " for="flexCheckDefault">
+                                                            Seleziona per proseguire
+                                                        </label>
+                                                    </div>
+
                                                 </div>
-                                                <div class="mt-3">
-                                                    <label for="city" class="form-label">Città</label>
-                                                    <input type="text" class="form-control" id="city"
-                                                        >
-                                                </div>
-                                                <div class="mt-3">
-                                                    <label for="city" class="form-label">stato</label>
-                                                    <input type="text" class="form-control" id="city"
-                                                        >                
-                                                </div>
-                                                <div class="mt-3">
-                                                    <label for="cap" class="form-label">Cap</label>
-                                                    <input type="number" class="form-control" id="cap"
-                                                        >                  
-                                                </div>
-                                                <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                    <label class="form-check-label" for="exampleCheck1">Check me
-                                                        out</label>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
                                             </form>
                                         </h5>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
+                                        <button type="button" class="btn-close text-reset fs-1"
+                                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
-                                        ...
+
                                     </div>
                                 </div>
                             </div>
