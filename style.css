@@ -29,8 +29,16 @@ main {
     width: 100%;
     height: calc(100% - 70px);
     display: flex;
+   flex-flow: row nowrap;
+ 
 }
-
+/* header navbar */
+#logo-boolean{
+    width: 50px;
+}
+ #bell{
+    color: orange ;
+ }
 /* sidebar */
 .my-side-bar{
     background-color: var(--color-side-bar);
@@ -45,6 +53,10 @@ main {
 
 /* main content */
 
+/* search-bar */
+
+
+
 #main-content {
     width: calc(100% - 150px);
     overflow-y: auto;
@@ -55,9 +67,18 @@ main {
 }
 
 table img{
-    width: 5%;
+    width: 50px;
 }
 
 table{
     font-size: 12px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    border: solid 2px grey;
+    border-radius: 20%;
+    color: grey;
+    padding: 4px;
 }
