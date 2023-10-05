@@ -56,8 +56,13 @@ main {
     background-image: url("../img/sidebar-bg.png");
 }
 
-#top-bar i{
+.list-inline i{
     color: white;
+    cursor: pointer;
+}
+
+.list-inline li:hover{
+    background-color: grey;
 }
 
 /* main content */
